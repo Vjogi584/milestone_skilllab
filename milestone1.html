@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Kudla - Home</title>
+    <link rel="stylesheet" href="milestone1.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo" style=" font-style: normal;
+    font-family: 'roboto';">Namma Kudla</div>
+        <nav>
+            <ul  style=" font-style: normal;
+    font-family: 'roboto'; color:black;">
+                <li  ><a href="#homepage" >Home</a></li>
+                <li  ><a href="#blogPage" >Blog</a></li>
+                <li  ><a href="#destinationpage">Destinations</a></li>
+                <li ><a href="#aboutguidepage">About</a></li>
+                <li ><a href="#footerpage">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="homepage" class="banner">
+        <h1 >Welcome to Namma Kudla</h1>
+        <p>Discover the culture, beauty, and unique charm of Kudla – the Coastal Paradise.</p>
+    </section>
+
+  
+    <section class="featured">
+        <h2>Featured Posts</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="cuisine.jpg" alt="post1">
+                <h3 style="color:black;">Cuisine of Kudla</h3>
+                <p style="color:black;">Explore the delicious and unique coastal flavors.</p>
+            </div>
+
+            <div class="card">
+                <img src="kudla_beach.jpg" alt="Post 2">
+                <h3 style="color:black;">Beautiful Beaches</h3>
+                <p style="color:black;">Discover the serene beaches of Coastal Karnataka.</p>
+            </div>
+
+            <div class="card">
+                <img src="kudla.jpg" alt="Post 3">
+                <h3 style="color:black;">Cultural Heritage</h3>
+                <p style="color:black;">Dive into Yakshagana, temples, and local traditions.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recent">
+        <h2>Recent Posts</h2>
+        <ul style="color:black;">
+            <li>Top 10 Places to Visit in Kudla</li>
+            <li>Festivals That Bring Kudla to Life</li>
+            <li>Local Foods You Must Try</li>
+        </ul>
+    </section>
+
+  
+    <section class="categories">
+        <h2>Popular Categories</h2>
+        <div style="color:black;" class="cat-list">
+            <span>Culture</span>
+            <span>Travel</span>
+            <span>Food</span>
+            <span>Beaches</span>
+        </div>
+    </section>
+
+    
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <button onclick="subscribe()">Subscribe</button>
+        <p id="msg"></p>
+    </section>
+
+<br>
+<hr style="color:#fffdd1;">
+
+
+   
+<section  id="blogPage"  class="blog-section">
+    <h2 class="blog-title-main">Travel Blog</h2>
+
+
+    <div style="color:black;" class="blog-container">
+
+        <!-- Main Blog Content -->
+        <article class="blog-post">
+            <h2 class="blog-post-title">Exploring Kudla: A Coastal Paradise</h2>
+
+            <p class="blog-meta">By <b>Admin</b> • Published on Jan 15, 2025</p>
+
+            <img src="kudla_beach.jpg" class="blog-main-image" alt="Kudla Image">
+
+            <p class="blog-content">
+                Kudla, known for its beautiful beaches and rich culture, is a destination that blends tradition with
+                natural beauty. From the serene sands to the vibrant cultural art of Yakshagana, there's something for
+                every traveler.
+            </p>
+            <br>
+            <br>
+
+            <!-- Video Example -->
+          <iframe class="yt-video  video-container"
+          src="https://www.youtube.com/embed/DGLmYy0NxsY"
+            style="border: none;"
+           ></iframe>
+          <br>
+          <br>
+
+         
+
+<iframe class="blog-map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.40060563949!2d74.77007160184154!3d12.922979283820597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1764471833345!5m2!1sen!2sin"
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+            <h3>Leave a Comment</h3>
+
+            <div class="comment-box">
+                <input type="text" id="commentName" placeholder="Your Name">
+                <textarea id="commentText" placeholder="Write your comment"></textarea>
+                <button onclick="addComment()">Post Comment</button>
+            </div>
+
+            <div id="commentsList"></div>
+      
+        </article>
+        <br>
+    
+
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+
+            <div class="sidebar-box">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Beaches</li>
+                    <li>Culture</li>
+                    <li>Food</li>
+                    <li>Travel Tips</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Tags</h3>
+                <div class="tags">
+                    <span>Kudla</span>
+                    <span>Coast</span>
+                    <span>Yakshagana</span>
+                    <span>Sea</span>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Top 5 Beaches</li>
+                    <li>Best Foods to Try</li>
+                    <li>Traditional Art Forms</li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+    
+</section>
+<br>
+<hr style="color:#fffdd1;">
+
+<div  id="destinationpage">
+     <h1 style="text-align:center;" class="hehehe">Destinations in kudla!</h1>
+<div class="destinations-grid">
+
+
+   
+    <div style="color:black;" class="destination-card">
+        <img src="panambur.jpeg" alt="Panambur Beach">
+        <h3>Panambur Beach</h3>
+        <p class="short-text">
+            One of the safest and most visited beaches in Mangalore…
+        </p>
+
+        
+
+        <button class="read-btn" onclick="toggleDetails('panambur-details')">Read More</button>
+
+        <div id="panambur-details" class="details-box">
+            <p>
+                Panambur Beach is known for water sports, camel rides, and beautiful sunsets.
+                It is clean, family-friendly, and has food stalls along the shore.
+            </p>
+        </div>
+    </div>
+
+
+  
+    <div style="color:black;" class="destination-card">
+        <img src="tannirbavi.jpeg" alt="Tannirbhavi Beach">
+        <h3>Tannirbhavi Beach</h3>
+        <p class="short-text">
+            Calm, clean, and surrounded by casuarina trees…
+        </p>
+
+     
+
+        <button class="read-btn" onclick="toggleDetails('tannirbhavi-details')">Read More</button>
+
+        <div id="tannirbhavi-details" class="details-box">
+            <p>
+                A peaceful beach offering stunning sunsets and a wooden walkway.
+                Accessible by road or ferry from Sultan Battery.
+            </p>
+        </div>
+    </div>
+
+
+ 
+    <div style="color:black;" class="destination-card">
+        <img src="someshwara.jpeg" alt="Someshwara Beach">
+        <h3>Someshwara Beach</h3>
+        <p class="short-text">
+            Famous for “Rudra Shile” rock formations…
+        </p>
+
+        <button class="read-btn" onclick="toggleDetails('someshwara-details')">Read More</button>
+
+        <div id="someshwara-details" class="details-box">
+            <p>
+                Someshwara Beach offers magnificent rock formations and a historic Shiva temple.
+                Swimming is unsafe due to strong currents.
+            </p>
+        </div>
+    </div>
+
+  <div style="color:black;"  class="destination-card">
+        <img src="pilikula.jpeg" alt="Pilikula Nisargadhama">
+        <h3>Pilikula Nisargadhama</h3>
+        <p class="short-text">Nature, heritage village & zoo.</p>
+       
+        <button class="read-btn"  onclick="toggleDetails('pilikula-details')">Read More</button>
+        <div class="details-box" id="pilikula-details">
+            <p>
+                Pilikula Nisargadhama is a large eco-educational nature park in Mangalore.
+It includes a zoo, botanical garden, lake, science center, and heritage village.
+It’s a peaceful destination for nature lovers, families, and students.
+            </p>
+        </div>
+    
+    
+    </div>
+
+
+
+    
+    <div  style="color:black;" class="destination-card">
+        <img src="sulthanbattery.jpeg" alt="Sultan Battery">
+        <h3>Sultan Battery</h3>
+        <p class="short-text">
+            A historic watchtower built by Tipu Sultan…
+        </p>
+
+     
+
+        <button class="read-btn" onclick="toggleDetails('battery-details')">Read More</button>
+
+        <div id="battery-details" class="details-box">
+            <p>
+                Sultan Battery offers river views and ferry rides to Tannirbhavi Beach.
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div  style="color:black;" class="destination-card">
+        <img src="kadripark.jpeg" alt="Kadri Park">
+        <h3>Kadri Park</h3>
+        <p class="short-text">
+            The biggest park in Mangalore with gardens and toy train…
+        </p>
+
+        
+
+        <button class="read-btn" onclick="toggleDetails('kadri-details')">Read More</button>
+
+        <div id="kadri-details" class="details-box">
+            <p>
+                A beautiful place for children and families with a toy train, flowers, and walking tracks.
+            </p>
+        </div>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+</div>
+
+<hr style="color: #fffdd1;">
+
+<div id="aboutguidepage" class="guide-profile-container">
+
+   
+    <div  style="color:black;" class="guide-profile-header">
+        <img src="deepika.jpeg" alt="Guide Photo" class="guide-photo">
+
+        <div class="guide-info">
+            <h2 class="guide-name">Vaishnavi</h2>
+            <p class="guide-bio">
+                Vaishnavi is a passionate travel guide from Mangalore with  years of experience.
+                she specializes in coastal adventures, food trails, and temple history.
+            </p>
+
+            <p class="guide-expertise-title">Expertise:</p>
+            <ul class="guide-expertise">
+                <li>Coastal Karnataka Tours</li>
+                <li>Local Food Recommendations</li>
+                <li>Beach Adventures</li>
+                <li>Heritage & Temple Tours</li>
+            </ul>
+
+            <div class="guide-social">
+                <a href="">Instagram</a>
+                <a href="">YouTube</a>
+                <a href="">Facebook</a>
+            </div>
+        </div>
+    </div>
+    <br>
+<br>
+<br>
+<hr style="color: #fffdd1;">
+
+    
+    <h3 class="guide-subtitle">Travel Recommendations by Vaishnavi</h3>
+
+    <div  style="color:black;" class="guide-recommendations">
+        <div class="guide-post">
+            <img src="panambur.jpeg">
+            <h4>Best Time to Visit Panambur Beach</h4>
+            <p>vaishnavi explains the perfect hours to enjoy a peaceful sunset.</p>
+        </div>
+
+        <div class="guide-post">
+            <img src="someshwara.jpeg">
+            <h4>Hidden Rock Spots at Someshwara</h4>
+            <p>Discover the scenic rock formations that most tourists miss.</p>
+        </div>
+
+        <div class="guide-post">
+            <img src="pabbas.jpeg">
+            <h4>Pabbas Ice Cream Parlour – Mangalore’s Most Loved Dessert Spot</h4>
+            <p>Famous for its iconic Gadbad and a wide variety of delicious ice creams that locals and tourists adore.</p>
+        </div>
+    </div>
+    <br>
+<br>
+<br>
+<hr style="color: #fffdd1;">
+
+    
+    <h3 class="guide-subtitle">Contact Vaishnavi for Advice</h3>
+
+    <div  style="color:black;" class="guide-contact-box">
+        <input type="text" id="guide-msg-name" placeholder="Your Name">
+        <input type="email" id="guide-msg-email" placeholder="Your Email">
+        <textarea id="guide-msg" placeholder="Ask your question..."></textarea>
+
+        <button onclick="sendGuideMessage()" class="guide-contact-btn">Send Message</button>
+
+        <p id="guide-msg-status" class="guide-status"></p>
+    </div>
+
+    <br>
+<br>
+<br>
+<hr style="color: #fffdd1;">
+
+   
+    <h3 class="guide-subtitle">Leave a Review</h3>
+
+    <div  style="color:black;" class="guide-feedback-section">
+
+       
+        <textarea id="guide-feedback-text" placeholder="Write your feedback..."></textarea>
+
+        <button onclick="submitGuideFeedback()" class="guide-feedback-btn">Submit Feedback</button>
+
+        <p id="guide-feedback-status" class="guide-status"></p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<hr style="color: #fffdd1;">
+
+<div class="dashboard-container">
+
+    
+    <h2 class="dash-title">Dashboard Overview</h2>
+
+    <div  style="color:black;" class="dash-metrics-grid">
+
+        <div class="dash-metric-box">
+            <h3>Total Users</h3>
+            <p id="dash-total-users">1250</p>
+        </div>
+
+        <div class="dash-metric-box">
+            <h3>Total Blog Posts</h3>
+            <p id="dash-total-posts">2</p>
+        </div>
+
+        <div class="dash-metric-box">
+            <h3>Active Guides</h3>
+            <p id="dash-active-guides">1</p>
+        </div>
+
+        <div class="dash-metric-box">
+            <h3>Daily Visitors</h3>
+            <p id="dash-daily-visitors">890</p>
+        </div>
+
+    </div>
+<br>
+<br>
+<br>
+<hr style="color: #fffdd1;">
+    
+    <h3 class="dash-subtitle">Recent Activity</h3>
+
+    <table  style="color:white;" class="dash-table">
+        <tr>
+            <th>User</th>
+            <th>Activity</th>
+            <th>Date</th>
+        </tr>
+
+        <tr>
+            <td>Vaishnavi</td>
+            <td>Posted a comment</td>
+            <td>Nov 28, 2025</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>Added new blog</td>
+            <td>Nov 27, 2025</td>
+        </tr>
+
+        <tr>
+            <td>Meera</td>
+            <td>Rated a destination</td>
+            <td>Nov 27, 2025</td>
+        </tr>
+    </table>
+
+   
+
+</div>
+
+
+
+<footer id="footerpage" class="site-footer">
+    <div class="footer-content">
+        <h3 class="footer-title">Namma Kudla</h3>
+        <p>Your trusted companion for discovering destinations in Kudla.</p>
+
+        <div class="footer-social">
+            <a href="#" class="footer-icon">Instagram</a>
+            <a href="#" class="footer-icon">Facebook</a>
+            <a href="#" class="footer-icon">X (Twitter)</a>
+            <a href="#" class="footer-icon">YouTube</a>
+        </div>
+
+        <p class="footer-bottom">© 2025 Namma Kudla. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+    <script src="milestone1.js"></script>
+
+</body>
+</html>
